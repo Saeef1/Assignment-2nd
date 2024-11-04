@@ -1,101 +1,87 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col tracking-[0.2px] items-center ">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <header className="flex h-[91px] relative items-center w-[1322px] justify-evenly">
+        <h3 className="font-bold tracking-[0.1px] w-[152px] absolute left-[136px] text-2xl ">BrandName</h3>
+        <div className="flex absolute left-[364px] justify-between w-[815px] ">
+          <div className="flex list-none font-bold text-[14px] items-center w-[275px] gap-5">
+            <li>Home</li>
+            <li>Product</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+          </div>
+          <div className="flex w-[189px] h-[52px] gap-11 font-bold items-center ">
+            <button className="w-10 h-6">Login</button>
+            <button className="bg-[#23A6F0] w-[214px] rounded-s-[5px] h-[52px] text-sm">JOIN US</button>
+          </div>
+        </div>
+      </header>
+
+      <main className="flex flex-col items-center text-center m-3 py-20 px-0 gap-20 w-[1,046px] h-[1028]">
+
+        <div className="w-[699px] h-[496px] py-10 flex flex-col gap-10 items-center">
+
+          <h5 className="font-bold text-[#23A6F0] tracking-[0.1] text-[16px]">Welcome</h5>
+
+          <div className="font-bold text-[55px] tracking-[0.2px] leading-[80px] w-[542px] h-40">
+            Selling on the internet like a pro
+          </div>
+
+          <div className="w-[536px] h-[60] font-normal text-xl leading-[30px] ">
+            We know how large objects will act, but things on a
+            small scale just do not act that way.
+          </div>
+
+          <div className="w-[365px] h-14 flex text-[14px] font-bold gap-[10]">
+
+            <div className="w-48 h-[52px] rounded-[5px] py-[15] px-9 bg-[#23A6F0]">Get Quote Now</div>
+
+            <div className="w-[162px] h-[52px] py-[15] px-9 border-[1px] border-[#23A6F0] text-[#23A6F0] rounded-[5px] "> Learn More</div>
+
+          </div>
+        </div>
+        <div className="flex  w-[1046px] text-left h-[292px] gap-[30px] ">
+          <div className="w-[328px] h-[292] flex flex-col shadow-inner py-[35px] bg-white px-10 gap-5">
+            <div className="w-[70] h-[76] bg-[#FFDCD1] rounded-[10px] "> </div>
+
+            <h5 className="font-bold text-base text-[#252B42]">training Courses</h5>
+
+            <div className="h-[2px] w-[50px] bg-[#E74040] "></div>
+
+            <p className="font-normal text-sm w-[222px] h-[60] text-[#737373]">
+              The gradual accumulation of information about atomic and small-scale behaviour...
+            </p>
+          </div>
+          <div className="w-[328px] h-[292] flex flex-col shadow-inner py-[35px] bg-white px-10 gap-5">
+            <div className="w-[70] h-[76] bg-[#B9EAA8] rounded-[10px] "> </div>
+
+            <h5 className="font-bold text-base text-[#252B42]">2,769 online courses</h5>
+
+            <div className="h-[2px] w-[50px] bg-[#E74040] "></div>
+
+            <p className="font-normal text-sm w-[222px] h-[60] text-[#737373]">
+              The gradual accumulation of information about atomic and small-scale behaviour...
+            </p>
+
+          </div>
+          <div className="w-[328px] h-[292] flex flex-col shadow-inner py-[35px] bg-[#23A6F0] px-10 gap-5">
+
+            <div className="w-[70] h-[76] bg-[#ffffff] rounded-[10px] "> </div>
+
+            <h5 className="font-bold text-base ]">training Courses</h5>
+
+            <div className="h-[2px] w-[50px] bg-[#ffffff] "></div>
+
+            <p className="font-normal text-sm w-[222px] h-[60] ">
+              The gradual accumulation of information about atomic and small-scale behaviour...
+            </p>
+
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
